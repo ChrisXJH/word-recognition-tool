@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="section">Section:</label>
+    <select id="section-select" name="section">
+        <option value="block1CB1">Block1 CB1</option>
+        <option value="block1CB2">Block1 CB2</option>
+        <option value="block2CB1">Block2 CB1</option>
+        <option value="block2CB2">Block2 CB2</option>
+        <option value="prac1">Prac1</option>
+        <option value="prac2">Prac2</option>
+    </select>
+
+    <hr />
+
+    <label for="csv-input">CSV file:</label>
+    <br />
+    <textarea id="csv-input" name="csv-input" rows="10" cols="50" placeholder="Copy and paste the csv content to here"></textarea>
+
+    <br />
+
+    <button id="generate-btn">Generate</button>
+    <hr />
+
+    <label for="result">JS Result:</label>
+    <br />
+
+    <textarea id="result" name="result" rows="10" cols="50"></textarea>
+
+    <p>Instructions:</p>
+    <ol>
+        <li>Select a section.</li>
+        <li>Copy the csv content and paste it to the CSV file input.</li>
+        <li>Click the "Generate" button.</li>
+        <li>Replace the content of <b>templates/js/<span id="object-file"></span></b> with the JS result content above.</li>
+    </ol>
+
+<script src="./main.js"></script>
+</body>
+</html>
